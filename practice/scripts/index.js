@@ -22,5 +22,8 @@ let arr = [1, 10, 20, 47, 59, 63, 75, 88, 99, 107, 120, 133, 155, 162, 176, 188,
 let inputs = [10, 49, 99, 110, 176]
 
 for (let i = 0; i < inputs.length; i++){
-    document.getElementById("demo").innerHTML = `<p>binarySearch(arr, ${inputs[i]}) = ${binarySearch(arr, inputs[i])}</p>`
+  var para = document.createElement("div");                 // Create a <p> element
+  para.innerHTML = `<p>binarySearch(arr, ${inputs[i]}) = ${binarySearch(arr, inputs[i])}</p>`;                // Insert text
+  document.getElementById("demo").appendChild(para); 
+  
 }
